@@ -1,0 +1,8 @@
+sir = input('Dati un sir de caractere: ')
+print("In sirul dat sunt", len([x for x in sir if x=='A']), "caractere 'A'")
+print("Sirul obtinut prin substituirea caracterului 'A' cu '*' este:", ''.join(['*' if x == 'A' else x for x in sir]))
+print("Sirul obtinut prin radierea caracterului 'B' este:", ''.join([x for x in sir if x!='B']))
+print("Numarul de aparitii a silabei MA in sirul S este", sir.count('MA'))
+print("Sirul obţinut prin substituirea tuturor apariţiilor în şirul S a silabei MA prinsilaba TA este:", sir.replace('MA', 'TA'))
+print("Sirul obtinut prin radierea silabei 'TO' este:", sir.replace('TO', ''))
+print("Sirul inversat este:", ''.join([x for x in reversed(sir)]))
